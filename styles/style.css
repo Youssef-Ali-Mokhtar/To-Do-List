@@ -1,0 +1,236 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+  
+* {
+   margin: 0;
+   padding: 0;
+}
+  
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+  
+h1,
+h2 {
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 6rem;
+}
+  
+h2 {
+    font-size: 4.2rem;
+}
+  
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+  
+ul {
+    list-style: none;
+    min-width: fit-content;
+}
+  
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+  
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em;
+}
+  
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--main-red);
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.nav-list a:hover {
+    background-color: var(--main-blue);
+}
+  
+.projects-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.add-projects-section {
+  justify-content: center;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.current-projects-section{
+  background-image: linear-gradient(62deg, #0a2005 0%, #0f011b 100%);
+}
+
+.finished-projects-section{
+  background-image: linear-gradient(62deg, #142211 0%, #1b0f25 100%);
+}
+
+  @media (max-width: 750px) {
+    .nav {
+        justify-content: space-evenly;
+        padding-left: 15px;
+    }
+  
+  }  
+
+.add-project-header{
+  color: #ff0062;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+#deadline-label {
+    font: inherit;
+    font-weight: bold;
+    color: #ff0062;
+    padding-top: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+  }
+
+input[type=text]{
+    width : 100%;
+  }
+
+input[type=time], input[type=date]{
+    width : 100%;
+  }
+  
+#date-time-holder{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+}
+
+button {
+    font: inherit;
+    background: #ff0062;
+    color: white;
+    border: 1px solid #ff0062;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.alt {
+    background: white;
+    color: #ff0062;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover,
+  button:active {
+    background: #ff2579;
+    border-color: #ff2579;
+    color: white;
+  }
+  
+  .centering-elements{
+      text-align: center;
+  }
+  
+  .card {
+    width: 70%;
+    min-width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+.projects-section-header {
+  padding: 20px;
+  max-width: 640px;
+}
+
+.projects-container{
+  width: 100%;
+}
+
+.projects-list{
+  margin:20px;
+}
+
+.project-card {
+  color:#000;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  background-color: white;
+  margin:5px;
+}
+
+.project-card > h3, .project-card > p, .project-card > button.alt{
+  color: black;
+  margin:5px;
+}
+
+.project-card > button{
+  margin:5px;
+}
+
+.more-info{
+  display:flex;
+  flex-direction: row;
+  align-content:flex-start;
+  margin:5px;
+}
+
+
+.invisible{
+  display: none;
+}
+
+.deadline, .start{
+  margin: 0 5px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles\style.css" />
+    <script src="script\app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#add-project-section-id">Add Project</a>
+            </li>
+            <li>
+                <a href="#current-projects-section-id">Current Projects</a>
+            </li>
+            <li>
+                <a href="#finished-projects-section-id">Finished Projects</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="add-project-section-id" class="add-projects-section projects-section">
+        <div class="card centering-elements">
+            <div class="add-project-header">Add Project</div>
+            <input type="text" id="project-title-input-id"  placeholder="Project Title">
+            <input type="text" id="project-details-input-id"  placeholder="Project Details" >
+            <label for="date-time" id="deadline-label">Deadline</label>
+            <div id="date-time-holder">
+                <input type="date" id="project-date-input-id" name="date-time">
+                <input type="time" id="project-time-input-id" name="date-time">
+            </div>
+
+            <br>
+            <button id="add-project-button-id">Add Project</button>
+        </div>
+    </section>
+
+    <section id="current-projects-section-id" class="current-projects-section projects-section">
+        <h2 class="projects-section-header">Current Projects</h2>
+        <div class="projects-container">
+            <ul class="projects-list" id = "current-projects-list-id">
+            </ul>
+        </div>
+    </section>
+
+    <section id="finished-projects-section-id" class="finished-projects-section projects-section">
+        <h2 class="projects-section-header">Finished Projects</h2>
+        <div class="projects-container">
+            <ul class="projects-list" id = "finished-projects-list-id">
+
+            </ul>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
